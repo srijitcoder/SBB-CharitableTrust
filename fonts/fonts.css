@@ -1,0 +1,22 @@
+@font-face {
+    font-family: akaDora;
+    src: url(akaDora.ttf);
+}
+@font-face {
+    font-family: Dyane;
+    src: url('Dyane Regular.ttf');
+}
+@font-face {
+    font-family: bilbo;
+    src: url(Bilbo-Regular.ttf);
+}
+
+@font-face {
+    font-family: myriadUltraLight;
+    src: url(myriad-set-pro_ultralight.ttf);
+}
+
+@font-face {
+    font-family: myriadLight;
+    src: url(myriad-set-pro_thin.ttf);
+}

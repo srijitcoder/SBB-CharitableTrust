@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+
+    <!-- Bootstrap CSS Library-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font-Awesome CSS Library-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Animate.css CSS Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <!-- Default CSS Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon.png">
+    
+    <!-- JQuery JS Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JS Library-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:40px;">
+                <center>
+                    <div class="overFlow">
+                    <div class="cardAdmin" style="background: url('img/3.jpg');">
+                        <div class="padTop"></div>
+                        <span>
+                           About
+                       </span> 
+                    </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:40px;">
+                <center>
+                    <div class="overFlow">
+                    <div class="cardAdmin" id="events" style="background: url('img/4.jpg');">
+                        <div class="padTop"></div>
+                       <span>
+                           Events
+                       </span> 
+                    </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:40px;">
+                <center>
+                    <div class="overFlow">
+                    <div class="cardAdmin" id="photos" style="background: url('img/6.jpg');">
+                        <div class="padTop"></div>
+                       <span>
+                           Photos
+                       </span> 
+                    </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:40px;">
+                <center>
+                    <div class="overFlow">
+                    <div class="cardAdmin" style="background: url('img/7.jpg');">
+                        <div class="padTop"></div>
+                        <span>
+                            New Member
+                        </span>
+                    </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <nav>
+        <a href="" class="log">Logout</a>
+    </nav>
+
+    <div class="tab" id="photo">
+        <div class="tabRel">
+            <div class="closeMe" id="photoClose" style="color:black;">
+                <a href="">X</a>
+            </div>
+            <div class="container">
+                <div class="row padTabs">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <center>
+                            <i class="fa fa-plus-circle iconTab animated slideInUp" id="photoIcon1"></i>
+                        </center>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                        <center>
+                            <i class="fa fa-eye iconTab animated slideInUp" id="photoIcon2"></i>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab animated tada" style="background:rgba(255, 255, 255, 0.9);" id="photoUpl">
+        <div class="tabRel">
+            <div class="closeMe animated fadeIn" id="uplClose">
+                <a href=""><span style="color:black;">X</span></a>
+            </div>
+            <div class="container">
+            <div class="row" style="margin-top:100px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <center>
+                    <div class="overFlow">
+                        
+                    </div>
+                </center>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab" id="eventAdd">
+        <div class="tabRel">
+            <div class="closeMe animated fadeIn" id="uplClose">
+                <a href="">X</a>
+            </div>
+            <div class="container">
+            <div class="row" style="margin-top:160px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <center>
+                    <div class="overFlow2">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:0px;">
+                            <center>
+                                <div class="overFlow2">
+                                <div class="cardAdmin2 animated slideInUp" id="eventTab" style="display:none;"><br>          
+                                    <form>
+                                        <input type="text" name="donarName" class="donar-name" placeholder="Event Detail"><br>
+                                        <input type="text" name="donarPhone" class="donar-name" placeholder="Event Date"><br>
+                                        <input type="text" name="donarPhone" class="donar-name" placeholder="Event Venue"><br>
+                                        <input type="button" name="donarButton" class="donar-button" value="Submit">
+                                    </form>                                    
+                                </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#photos").click(function(){
+            $("#photo").show();
+            setTimeout(photoTab, 400);
+        });
+    }); 
+
+    $(document).ready(function(){
+        $("#events").click(function(){
+            $("#eventAdd").show();
+            setTimeout(eventTab, 500);
+        });
+    }); 
+
+    function eventTab(){
+    $(document).ready(function() {
+            $("#eventTab").show();
+    });
+    }
+
+    function photoTab(){
+    $(document).ready(function() {
+            $("#photoIcon1").show(400);
+            $("#photoIcon2").show(400);      
+    });
+    }
+
+    $(document).ready(function(){
+        $("#photoClose").click(function(){
+            $("#photo").hide();
+            $("#photoIcon1").hide();
+            $("#photoIcon2").hide();
+        });
+    });
+
+    $(document).ready(function(){
+        $("#photoIcon1").click(function(){
+            $("#photo").hide();
+            $("#photoIcon1").hide();
+            $("#photoIcon2").hide();
+            setTimeout(photoUpl, 500);
+        });
+    });
+
+    function photoUpl() {
+        $(document).ready(function() {
+                $("#photoUpl").show();
+                setTimeout(uplTab, 500);     
+        });    
+    }
+
+    function uplTab(){
+        $(document).ready(function() {
+                $("#uplTab").show(800);     
+        }); 
+    }
+</script>
+  </body>
+</html>
